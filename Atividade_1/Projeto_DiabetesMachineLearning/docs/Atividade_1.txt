@@ -1,0 +1,52 @@
+1. Explique, com suas palavras, o que é machine learning?
+
+Machine Learning é uma forma de ensinar a máquina usando dados reais, como imagens, números ou textos, para que ela consiga aprender padrões e tomar decisões por conta própria, sem que alguém precise programar cada passo. 
+É como mostrar vários exemplos até ela entender o que está certo ou errado.
+----------------------------------------------------------------------------------------------------------------
+
+2. Explique o conceito de conjunto de treinamento, conjunto de validação e
+conjunto de teste em machine learning.
+
+Treinamento: É a fase em que o modelo aprende com os dados disponíveis, ajustando seus parâmetros para minimizar os erros e identificar padrões com base nas características dos dados.
+
+Validação: Usamos um conjunto diferente de dados para avaliar o desempenho do modelo enquanto ele ainda está sendo ajustado. Isso ajuda a escolher os melhores parâmetros e evitar que o modelo decore os dados (overfitting).
+
+Teste: Após o treinamento e validação, usamos um novo conjunto de dados que o modelo nunca viu para verificar se ele realmente aprendeu e consegue fazer boas previsões no mundo real, sem intervenção.
+
+----------------------------------------------------------------------------------------------------------------
+
+3.  Explique como você lidaria com dados ausentes em um conjunto de dados
+de treinamento.
+
+Quando há dados ausentes, o modelo precisa estar preparado para lidar com essas situações, primeiro, é importante avaliar se o dado faltante é realmente relevante para o modelo, se o impacto for pequeno, ele pode ser desconsiderado.
+
+Em outros casos, é possível tentar estimar o valor ausente com base na média dos outros registros, mas isso deve ser feito com cautela, pois pode comprometer a precisão do modelo.
+Outra alternativa é deixar claro que a informação está faltando, sinalizando ao usuário que aquele campo precisa ser preenchido.
+
+---------------------------------------------------------------------------------------------------------------
+
+4. O que é uma matriz de confusão e como ela é usada para avaliar o
+desempenho de um modelo preditivo?
+
+A matriz de confusão é uma ferramenta usada para avaliar o desempenho de um modelo de classificação, ela mostra, de forma detalhada, o que o modelo acertou e onde errou.
+
+VP (Verdadeiro Positivo): o modelo acertou ao prever que um caso era positivo e ele realmente era. Exemplo: um teste de COVID que deu positivo para uma pessoa que de fato está infectada.
+
+FN (Falso Negativo): o modelo previu que o caso era negativo, mas na verdade era positivo. Isso pode ser perigoso, como quando um paciente doente é diagnosticado como saudável.
+
+FP (Falso Positivo): o modelo disse que era positivo, mas era negativo. Pode causar preocupação desnecessária, como um paciente saudável receber um diagnóstico incorreto.
+
+VN (Verdadeiro Negativo): o modelo acertou ao prever que era negativo e realmente era.
+
+A matriz de confusão é importante porque mostra mais do que a porcentagem de acertos, ela revela como o modelo erra e quais erros são mais críticos.
+
+---------------------------------------------------------------------------------------------------------------
+
+5. Em quais áreas (tais como construção civil, agricultura, saúde, manufatura,
+entre outras) você acha mais interessante aplicar algoritmos de machine
+learning?
+
+Na minha visão, a área da saúde é uma das mais interessantes para aplicar Machine Learning, porque pode ajudar a salvar vidas, com o uso correto, é possível fazer diagnósticos mais rápidos, prever doenças com antecedência e até personalizar tratamentos para cada paciente. 
+Porém, é importante lembrar que, além dos benefícios, também existem riscos, como erros em diagnósticos, desigualdade no atendimento se os dados não forem bem escolhidos, e preocupações com a privacidade das informações dos pacientes, por isso, acredito que o uso da tecnologia na saúde deve ser feito com responsabilidade, sempre pensando nas pessoas em primeiro lugar.
+
+
