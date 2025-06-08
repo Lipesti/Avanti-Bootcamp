@@ -31,8 +31,8 @@ Este projeto tem como objetivo prever a presença de diabetes com base em dados 
 ### 1. Clone este repositório
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/Lipesti/Avanti-Bootcamp/tree/eb5a22f829809dabe084b40618d9bd5af9c3b883/Atividade_1/Projeto_DiabetesMachineLearning
+cd Projeto_DiabetesMachineLearning
 ```
 
 ### 2. Instale as bibliotecas necessárias
