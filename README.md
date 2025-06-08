@@ -22,16 +22,37 @@ Abaixo estão as atividades e projetos já concluídos, cada um com seu próprio
 
 ### **Módulo 1: Fundamentos de Machine Learning**
 
+
 * **Atividade 1: Previsão de Diabetes com Regressão Logística**
     * **Descrição:** Implementação de um modelo de Regressão Logística para classificar a presença de diabetes com base em um dataset clínico. Inclui etapas de limpeza, padronização e avaliação detalhada.
-    * **Acessar Projeto:** [Atividade_1/Projeto_DiabetesMachineLearning/README.md](Atividade_1/Projeto_DiabetesMachineLearning/README.md)
-    * **Link Direto no GitHub:** [Link para a pasta do Projeto_DiabetesMachineLearning no GitHub](https://github.com/Lipesti/Avanti-Bootcamp/tree/main/Atividade_1/Projeto_DiabetesMachineLearning) 
+      
+## 🔍 Etapas do Projeto
+O projeto foi dividido nas seguintes fases:
 
-
-* **Atividade X: (Nome da Atividade)**
-    * **Descrição:** (Breve descrição da atividade)
-    * **Acessar Projeto:** [Atividade_2/NomeDoProjeto/README.md](Atividade_2/NomeDoProjeto/README.md)
-
+1. **Carregamento do Dataset**
+2. **Limpeza e tratamento dos dados (substituindo zeros pela mediana)**
+3. **Padronização das variáveis numéricas**
+4. **Divisão dos dados:**
+   - Treinamento: 70%
+   - Validação: 15%
+   - Teste: 15%
+5. **Treinamento do modelo de Regressão Logística**
+6. **Avaliação do desempenho nos conjuntos de validação e teste usando:**
+   - Matriz de confusão
+   - Acurácia
+   - Precisão
+   - Recall
+   - F1-Score
+## 🧠 Aprendizados
+Este projeto me ajudou a entender melhor como:
+- Limpar e preparar dados reais
+- Aplicar padronização
+- Treinar e avaliar um modelo de classificação
+- Dividir corretamente o conjunto de dados em três partes (treino, validação e teste)
+- Interpretar métricas de avaliação de modelos
+    * **Link Direto no GitHub:** [Link para a pasta do Projeto_DiabetesMachineLearning no GitHub](https://github.com/Lipesti/Avanti-Bootcamp/tree/main/Atividade_1/Projeto_DiabetesMachineLearning)
+      
+![Resultado](https://github.com/user-attachments/assets/86815ad8-e9f2-4c61-ab99-4e09ccec7a1d)
 ---
 
 ## 🛠️ Tecnologias Utilizadas
@@ -41,7 +62,6 @@ Abaixo estão as atividades e projetos já concluídos, cada um com seu próprio
 * NumPy
 * Scikit-learn
 * Colorama (para visualização no terminal)
-* Git & GitHub
 
 ---
 
