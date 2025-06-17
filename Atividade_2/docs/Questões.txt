@@ -1,0 +1,47 @@
+6. Como identificar e tratar outliers em uma coluna numérica usando desvio
+padrão ou quartis?
+Pra achar e tratar outliers (aqueles valores "fora da curva") numa coluna numérica, a gente pode usar:
+
+Desvio Padrão: Calcula a média e o desvio padrão da coluna. Aí, a gente define um limite, tipo, valores que estão a mais de 2 ou 3 desvios padrão da média são considerados outliers. Pra tratar, pode substituir por NaN, pela média, ou remover as linhas.
+Quartis (IQR - Intervalo Interquartil): Calcula o 1º quartil (Q1) e o 3º quartil (Q3). O IQR é Q3 - Q1. Outliers seriam valores menores que Q1 - 1.5 * IQR ou maiores que Q3 + 1.5 * IQR. O tratamento é parecido: substituir ou remover.
+
+------------------------------------
+7. Como concatenar vários DataFrames (empilhando linhas ou colunas), mesmo que tenham colunas diferentes? 
+Dica: Utiliza-se pd.concat() especificando axis=0 (linhas) ou axis=1 (colunas). Quando há colunas diferentes os valores ausentes são preenchidos com NaN.
+
+Empilhar linhas: pd.concat([df1, df2, df3], axis=0). Se tiver colunas diferentes, o Pandas preenche com NaN onde não tem valor.
+Empilhar colunas: pd.concat([df1, df2], axis=1). Mesma coisa, se uma coluna não existir em um dos DataFrames, ele coloca NaN.
+É bom pra juntar dados de arquivos diferentes ou dividir um DF grande pra processar e depois unir.
+-------------------------------------------------------------------------------------------------------------
+
+8. Utilizando pandas, como realizar a leitura de um arquivo CSV em um DataFrame e exibir as primeiras linhas?
+
+import pandas as pd (primeiro, né!)
+df = pd.read_csv('nome_do_arquivo.csv')
+print(df.head()) pra ver as 5 primeiras linhas e ter uma ideia da estrutura.
+-------------------------------------------------------------------------------------------------------------
+
+9.  Utilizando pandas, como selecionar uma coluna específica e filtrar linhas em um “DataFrame” com base em uma condição?
+
+Selecionar uma coluna:
+df['NomeDaColuna'] (retorna uma Series)
+df[['NomeDaColuna']] (retorna um DataFrame com uma coluna só)
+Filtrar linhas por condição:
+df[df['Idade'] > 30] (seleciona só as linhas onde a idade é maior que 30)
+df[df['Status'] == 'Ativo'] (filtra por valor de texto)
+Dá pra combinar condições com & (e) ou | (ou). Ex: df[(df['Idade'] > 30) & (df['Cidade'] == 'São Paulo')]
+-------------------------------------------------------------------------------------------------------------
+
+10. Utilizando pandas, como lidar com valores ausentes (NaN) em um DataFrame?
+
+
+Identificar: df.isnull().sum() mostra quantos NaN tem em cada coluna.
+Remover linhas/colunas com NaN:
+df.dropna(): remove linhas que têm qualquer NaN.
+df.dropna(axis=1): remove colunas que têm qualquer NaN.
+df.dropna(how='all'): remove linhas/colunas só se todos os valores forem NaN.
+Preencher NaN:
+df.fillna(0): preenche todos os NaN com zero.
+df['Coluna'].fillna(df['Coluna'].mean()): preenche os NaN de uma coluna específica com a média dessa coluna.
+df.fillna(method='ffill'): preenche com o valor da linha anterior.
+df.fillna(method='bfill'): preenche com o valor da próxima linha.
